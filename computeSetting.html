@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<title>考核设置</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/app.css">
+<link rel="stylesheet" href="css/sweetalert.css">
+<link rel="stylesheet" href="http://7xp0c4.com2.z0.glb.qiniucdn.com/iconfont-1.4.css" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/sweetalert.min.js"></script>
+<style>
+    .table-form input.mini{
+        width: 40px;
+    }
+</style>
+</head>
+<body>
+<div class="page-main" style="top:-1px">
+    <div class="page-tabs">
+        <ul class="page-tabs-nav">
+            <li class="active">考核设置</li>
+            <li>基础设置</li>
+        </ul>
+        <ul class="page-tabs-container">
+            <li class="fadeIn animated active">
+                <table class="table-form table-bordered bg-white">
+                        <tr>
+                            <td class="require" width="200">综合考核合格条件</td>
+                            <td>
+                                寝室分大于<input class="mini" type="text" value="88">，
+                                <select>
+                                    <option>和</option>
+                                    <option>或</option>
+                                </select>，
+                                床位分大于<input class="mini" type="text" value="88">，且寝室违章小于<input class="mini" value="8" type="text">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="require" width="200">综合考核合格条件</td>
+                            <td>
+                                寝室分大于<input class="mini" type="text">，
+                                <select><option>和</option><option>或</option></select>，
+                                床位分大于<input class="mini" type="text">，且寝室违章小于<input class="mini" type="text">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="require" width="200">综合考核合格条件</td>
+                            <td>
+                                寝室分大于<input class="mini" type="text">，
+                                <select><option>和</option><option>或</option></select>，
+                                床位分大于<input class="mini" type="text">，且寝室违章小于<input class="mini" type="text">
+                            </td>
+                        </tr>
+                        <tr><td></td>
+                            <td>
+                                <!--<button class="btn btn-success">提交</button>-->
+                                <button class="btn btn-info">保存</button>
+                                <!--<button class="btn btn-danger">删除</button>-->
+                            </td>
+                        </tr>
+                    </table>
+            </li>
+            <li class="fadeIn animated">
+                <div class="from-container">
+                    <table class="table-form table-bordered bg-white">
+                        <tr>
+                            <td class="require" width="200">综合考核</td>
+                            <td>
+                                <label><input type="radio" name="method" value="1"> 关闭</label>
+                                <br>
+                                <label><input type="radio" name="method" value="2"> 开启</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="require" width="200">综合考核项目</td>
+                            <td>
+                                <label><input type="checkbox" name="method" value="1"> 寝室分</label>
+                                <br>
+                                <label><input type="checkbox" name="method" value="2"> 床位分</label>
+                                <br>
+                                <label><input type="checkbox" name="method" value="3"> 违章</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="require" width="200">综合考核指标</td>
+                            <td>
+                                <label><input type="checkbox" name="method" value="1"> 不合格</label>
+                                <br>
+                                <label><input type="checkbox" name="method" value="2"> 合格</label>
+                                <br>
+                                <label><input type="checkbox" name="method" value="3"> 优秀</label>
+                            </td>
+                        </tr>
+                        <tr><td></td>
+                            <td>
+                                <!--<button class="btn btn-success">提交</button>-->
+                                <button class="btn btn-info">保存</button>
+                                <!--<button class="btn btn-danger">删除</button>-->
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </li>
+            
+        </ul>
+    
+</div>
+<script>
+
+    $('.page-tabs .page-tabs-nav li').click(function(event){
+        var e = event.target;
+        $(e).siblings().removeClass('active');
+        $(e.parentNode.parentNode).find('.page-tabs-container>li').eq($(e).addClass('active').index()).addClass('active').siblings().removeClass('active');
+    });
+
+    
+
+</script>
+</body>
+</html>
