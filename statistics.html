@@ -81,7 +81,7 @@
             <li>综合考核查询</li>
             <li>综合考核统计</li>
         </ul>
-        <ul class="page-tabs-container">
+        <ul class="page-tabs-container" style="background-color:#fff">
             <li class="fadeIn animated active">
                 <div class="table-container" style="bottom:54px;">
                     <table class="table table-striped table-hover">
@@ -214,6 +214,11 @@
             <li class="fadeIn animated">
                 <div id="mychart" chart style="height:300px;border-bottom:1px solid #dfe0e0"></div>
                 <div class="table-container" style="top:300px;">
+                    <div class="tool-bar" style="background:#f6f7f8">
+                        <div>
+                            <a class="btn btn-default" ng-click="download()">下载表格</a>
+                        </div>
+                    </div>
                     <table class="table table-striped table-hover">
                         <thead>
                             <tr>

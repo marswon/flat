@@ -27,41 +27,77 @@
         <ul class="page-tabs-container">
             <li class="fadeIn animated active">
                 <table class="table-form table-bordered bg-white">
-                        <tr>
-                            <td class="require" width="200">综合考核合格条件</td>
-                            <td>
-                                寝室分大于<input class="mini" type="text" value="88">，
+                    <tr>
+                        <td class="require" width="200">综合考核项目</td>
+                        <td>
+                            <label><input type="checkbox" name="method" value="1"> 寝室分</label>
+                            <br>
+                            <label><input type="checkbox" name="method" value="2"> 床位分</label>
+                            <br>
+                            <label><input type="checkbox" name="method" value="3"> 违章</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="require" width="200">综合考核优秀条件</td>
+                        <td>
+                            <label>
+                                <input type="radio" name="youxiu">
+                                寝室分优秀，
                                 <select>
-                                    <option>和</option>
+                                    <option>且</option>
                                     <option>或</option>
                                 </select>，
-                                床位分大于<input class="mini" type="text" value="88">，且寝室违章小于<input class="mini" value="8" type="text">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="require" width="200">综合考核合格条件</td>
-                            <td>
-                                寝室分大于<input class="mini" type="text">，
-                                <select><option>和</option><option>或</option></select>，
-                                床位分大于<input class="mini" type="text">，且寝室违章小于<input class="mini" type="text">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="require" width="200">综合考核合格条件</td>
-                            <td>
-                                寝室分大于<input class="mini" type="text">，
-                                <select><option>和</option><option>或</option></select>，
-                                床位分大于<input class="mini" type="text">，且寝室违章小于<input class="mini" type="text">
-                            </td>
-                        </tr>
-                        <tr><td></td>
-                            <td>
-                                <!--<button class="btn btn-success">提交</button>-->
-                                <button class="btn btn-info">保存</button>
-                                <!--<button class="btn btn-danger">删除</button>-->
-                            </td>
-                        </tr>
-                    </table>
+                                床位分优秀，且寝室违章小于<input class="mini" value="8" type="text">
+                            </label>
+                            <br>
+                            <label>
+                                <input type="radio" name="youxiu">
+                                有一项为优秀，且另一项至少为合格
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="require" width="200">综合考核合格条件</td>
+                        <td>
+                            其余为合格
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="require" width="200">综合考核不合格条件</td>
+                        <td>
+                                寝室分优秀，
+                                <select>
+                                    <option>且</option>
+                                    <option>或</option>
+                                </select>，
+                                床位分优秀，且寝室违章小于<input class="mini" value="8" type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="200">预览</td>
+                        <td>
+                            <table border="1" style="text-align:center">
+                                <tr><td>寝室/床位</td><td>优秀</td><td>合格</td><td>不合格</td></tr>
+                                <tr>
+                                    <td>优秀</td><td>优</td><td>合</td><td>不</td>
+                                </tr>
+                                <tr>
+                                    <td>合格</td><td>合</td><td>合</td><td>不</td>
+                                </tr>
+                                <tr>
+                                    <td>不合格</td><td>不</td><td>不</td><td>不</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr><td></td>
+                        <td>
+                            <!--<button class="btn btn-success">提交</button>-->
+                            <button class="btn btn-info">保存</button>
+                            <!--<button class="btn btn-danger">删除</button>-->
+                        </td>
+                    </tr>
+                </table>
             </li>
             <li class="fadeIn animated">
                 <div class="from-container">
